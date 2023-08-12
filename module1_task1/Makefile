@@ -1,6 +1,6 @@
 # Build the Hugo website
 build:
-	@hugo -d public
+	hugo -d public
 
 # Clean the output directory
 clean:
