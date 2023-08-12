@@ -1,3 +1,4 @@
+.PHONY: build clean post
 # Build the Hugo website
 build:
 	hugo -d public
