@@ -1,13 +1,10 @@
-# Set the output directory
-OUTPUT_DIR = public
-
 # Build the Hugo website
 build:
-	@hugo -d $(OUTPUT_DIR)
+	@hugo -d public
 
 # Clean the output directory
 clean:
-	@rm -Rf $(OUTPUT_DIR)/*
+	@rm -Rf public/*
 
 # Create a new blog post. Filename and title come from the POST_NAME environment variable
 post:
