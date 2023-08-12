@@ -1,4 +1,6 @@
-Prerequisites
+# Hugo
+
+## Prerequisites
 
     A Valid Go-Hugo website is provided
     Git Submodules prohibited
@@ -6,7 +8,7 @@ Prerequisites
     No directory public/ committed
     Makefile present
 
-Lifecycle
+## Lifecycle
 
     post
     build
