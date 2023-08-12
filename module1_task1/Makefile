@@ -1,10 +1,15 @@
-# Implement the next steps for the actual Go-Hugo website's source code
+# Set the output directory
+OUTPUT_DIR = public
+
+# Build the Hugo website
 build:
-	@hugo -d public
+	@hugo -d $(OUTPUT_DIR)
 
+# Clean the output directory
 clean:
-	@rm -Rf public/
+	@rm -Rf $(OUTPUT_DIR)/*
 
+# Create a new blog post. Filename and title come from the POST_NAME environment variable
 post:
-	hugo new posts/$(POST_NAME).md
-	sed -i 's/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
+	@hugo new posts/$(POST_NAME).md
+	@sed -i 's/title: .*/title: "$(POST_NAME)"/' content/posts/$(POST_NAME).md
