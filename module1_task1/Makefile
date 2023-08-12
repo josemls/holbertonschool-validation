@@ -1,12 +1,11 @@
-# Implement the next steps for the actual Go-Hugo website's source code
-build:
-	@hugo
+.PHONY: build clean post
 
-clean:
-	@rm -Rf public/
+build: 
+	hugo -d public
 
-post:
-	@rm -Rf content/posts/$(POST_NAME).md
-	@hugo new posts/$(POST_NAME).md
-	@sed -i 's/title:.*/title: $(POST_TITLE)/' content/posts/$(POST_NAME).md
-	@sed -i 's/draft:.*/draft: "false"/' content/posts/$(POST_NAME).md
+clean: 
+	rm -rf public/
+
+post: 
+	hugo new posts/$(POST_NAME).md
+	sed -i '2s/title: .*/title: "$(POST_TITLE)"/' content/posts/$(POST_NAME).md
