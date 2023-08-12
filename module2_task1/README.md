@@ -13,3 +13,5 @@
 - test: test to ensure application behaves as expected.
 - post: Create a new blog post whose filename and title come from the environment variables POST_TITLE and POST_NAME.
 - help: prints out the list of commands in makefile and their usage.
+- lint
+
