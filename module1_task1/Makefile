@@ -4,7 +4,7 @@ build:
 
 # Clean the output directory
 clean:
-	@rm -Rf public/*
+	@rm -Rf public/
 
 # Create a new blog post. Filename and title come from the POST_NAME environment variable
 post:
