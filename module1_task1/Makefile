@@ -1,6 +1,6 @@
 # Implement the next steps for the actual Go-Hugo website's source code
 build:
-	@hugo
+	@hugo -d public
 
 clean:
 	@rm -Rf public/
