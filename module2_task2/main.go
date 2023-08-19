@@ -12,7 +12,6 @@ import (
 
 func main() {
 	httpAddr := "0.0.0.0:9999"
-	
 	if port := os.Getenv("PORT"); port != "" {
 		httpAddr = "0.0.0.0:" + port
 	}
